@@ -1,5 +1,7 @@
 # vue-numerical-calc
 
+Design made on Figma [here](https://www.figma.com/file/GL1hloRq68U9pK0Bk6DADk/Vue-Numerical-Calculus)
+
 ## Project setup
 ```
 yarn install
