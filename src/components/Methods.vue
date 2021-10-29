@@ -1,22 +1,23 @@
 <!-- This is where all methods cards are contained -->
 <template>
+  <h2>This is a component to contain the methods</h2>
   <div class="methods">
-    <h2>This is a component to contain the methods</h2>
-    <Method msg="Hi!" />
-    <Method msg="I" />
-    <Method msg="am" />
-    <Method msg="a" />
-    <Method msg="Method" />
+    <MethodCard methodName="Hi!" />
+    <MethodCard methodName="I" />
+    <MethodCard methodName="am" />
+    <MethodCard methodName="a" />
+    <MethodCard methodName="Method" />
+    <MethodCard methodName="Card" />
   </div>
 </template>
 
 <script>
-import Method from "./Method.vue";
+import MethodCard from "./MethodCard.vue";
 
 export default {
   name: "Methods",
   components: {
-    Method,
+    MethodCard,
   },
 };
 </script>
@@ -24,8 +25,8 @@ export default {
 <style scoped>
 .methods {
   margin: auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto auto auto;
   /* This values are just placeholders */
   width: 1000px;
   height: 700px;

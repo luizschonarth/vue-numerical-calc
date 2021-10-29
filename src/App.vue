@@ -4,17 +4,11 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view />
-  <Methods />
 </template>
 
 <script>
-import Methods from "./components/Methods.vue";
-
 export default {
   name: "App",
-  components: {
-    Methods,
-  },
 };
 </script>
 

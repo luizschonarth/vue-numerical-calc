@@ -1,9 +1,19 @@
 <!-- This is a single method -->
 <template>
   <div class="method">
-    <h1>{{ msg }}</h1>
+    <h1>{{ methodName }}</h1>
   </div>
 </template>
+
+<script>
+export default {
+  name: "MethodCard",
+  props: {
+    methodName: String,
+  },
+  components: {},
+};
+</script>
 
 <style scoped>
 .method {
@@ -17,13 +27,3 @@
   color: white;
 }
 </style>
-
-<script>
-export default {
-  name: "Method",
-  props: {
-    msg: String,
-  },
-  components: {},
-};
-</script>
